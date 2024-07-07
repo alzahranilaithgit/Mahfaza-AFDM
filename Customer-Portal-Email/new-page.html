@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="">
 <head>
 <title></title>
@@ -12,291 +11,72 @@
 <meta content="" name="description"/>
 <meta charset="utf-8"/>
 <meta content="width=device-width" name="viewport"/>
-<style>
-		.bee-row,
-		.bee-row-content {
-			position: relative
-		}
-
-		.bee-page-container,
-		.bee-row-1,
-		.bee-row-2 {
-			background-repeat: no-repeat
-		}
-
-		body {
-			background-color: #ffffff;
-			color: #000000;
-			font-family: Arial, Helvetica, sans-serif
-		}
-
-		.bee-page-container {
-			background-image: url("https://63405abd22.imgdist.com/pub/bfra/i3t6xwxz/p7t/qga/k19/shutterstock_2280709537.png");
-			background-position: top left;
-			background-size: cover
-		}
-
-		.bee-row-1 .bee-col-1 .bee-block-13 a,
-		.bee-row-1 .bee-col-1 .bee-block-14 a,
-		.bee-row-1 .bee-col-1 .bee-block-15 a,
-		.bee-row-1 .bee-col-1 .bee-block-16 a,
-		.bee-row-1 .bee-col-1 .bee-block-5 a,
-		.bee-row-2 .bee-col-1 .bee-block-1 a,
-		a {
-			color: #7747FF
-		}
-
-		* {
-			box-sizing: border-box
-		}
-
-		body,
-		h1,
-		p {
-			margin: 0
-		}
-
-		.bee-row-content {
-			max-width: 615px;
-			margin: 0 auto;
-			display: flex
-		}
-
-		.bee-row-content .bee-col-w12 {
-			flex-basis: 100%
-		}
-
-		.bee-image {
-			overflow: auto
-		}
-
-		.bee-image .bee-right {
-			float: right
-		}
-
-		.bee-row-1 .bee-col-1 .bee-block-1,
-		.bee-row-1 .bee-col-1 .bee-block-8 {
-			width: 100%
-		}
-
-		.bee-icon {
-			display: inline-block;
-			vertical-align: middle
-		}
-
-		.bee-icon .bee-content {
-			display: flex;
-			align-items: center
-		}
-
-		.bee-image img {
-			display: block;
-			width: 100%
-		}
-
-		.bee-paragraph {
-			overflow-wrap: anywhere
-		}
-
-		@media (max-width:635px) {
-			.bee-row-content:not(.no_stack) {
-				display: block
-			}
-		}
-
-		.bee-row-1 .bee-row-content,
-		.bee-row-2 .bee-row-content {
-			background-repeat: no-repeat;
-			color: #000000
-		}
-
-		.bee-row-1 .bee-col-1,
-		.bee-row-2 .bee-col-1 {
-			padding-bottom: 5px;
-			padding-top: 5px
-		}
-
-		.bee-row-1 .bee-col-1 .bee-block-10,
-		.bee-row-1 .bee-col-1 .bee-block-2 {
-			padding: 10px;
-			text-align: center;
-			width: 100%
-		}
-
-		.bee-row-1 .bee-col-1 .bee-block-13,
-		.bee-row-1 .bee-col-1 .bee-block-14,
-		.bee-row-1 .bee-col-1 .bee-block-15,
-		.bee-row-1 .bee-col-1 .bee-block-16,
-		.bee-row-1 .bee-col-1 .bee-block-4,
-		.bee-row-1 .bee-col-1 .bee-block-5,
-		.bee-row-1 .bee-col-1 .bee-block-6 {
-			padding: 10px
-		}
-
-		.bee-row-1 .bee-col-1 .bee-block-11 {
-			color: #000000;
-			font-family: inherit;
-			font-size: 14px;
-			font-weight: 400;
-			text-align: left
-		}
-
-		.bee-row-1 .bee-col-1 .bee-block-13,
-		.bee-row-1 .bee-col-1 .bee-block-5 {
-			color: #101112;
-			direction: ltr;
-			font-weight: 400;
-			letter-spacing: 0;
-			line-height: 120%;
-			text-align: left
-		}
-
-		.bee-row-2 {
-			background-color: #1f4d96
-		}
-
-		.bee-row-1 .bee-col-1 .bee-block-14,
-		.bee-row-1 .bee-col-1 .bee-block-16,
-		.bee-row-1 .bee-col-1 .bee-block-4,
-		.bee-row-1 .bee-col-1 .bee-block-6 {
-			color: #101112;
-			direction: ltr;
-			font-size: 13px;
-			font-weight: 400;
-			letter-spacing: 0;
-			line-height: 120%;
-			text-align: left
-		}
-
-		.bee-row-1 .bee-col-1 .bee-block-4 a,
-		.bee-row-1 .bee-col-1 .bee-block-6 a {
-			color: #1f4d96
-		}
-
-		.bee-row-1 .bee-col-1 .bee-block-13 p:not(:last-child),
-		.bee-row-1 .bee-col-1 .bee-block-14 p:not(:last-child),
-		.bee-row-1 .bee-col-1 .bee-block-4 p:not(:last-child),
-		.bee-row-1 .bee-col-1 .bee-block-5 p:not(:last-child),
-		.bee-row-1 .bee-col-1 .bee-block-6 p:not(:last-child),
-		.bee-row-2 .bee-col-1 .bee-block-1 p:not(:last-child) {
-			margin-bottom: 16px
-		}
-
-		.bee-row-1 .bee-col-1 .bee-block-5 {
-			font-size: 16px
-		}
-
-		.bee-row-1 .bee-col-1 .bee-block-13 {
-			font-size: 12px
-		}
-
-		.bee-row-1 .bee-col-1 .bee-block-11 .bee-icon-image {
-			padding: 5px
-		}
-
-		.bee-row-1 .bee-col-1 .bee-block-11 .bee-icon:not(.bee-icon-first) .bee-content {
-			margin-left: 0
-		}
-
-		.bee-row-1 .bee-col-1 .bee-block-11 .bee-icon::not(.bee-icon-last) .bee-content {
-			margin-right: 0
-		}
-
-		.bee-row-1 .bee-col-1 .bee-block-15 {
-			color: #1f4d96;
-			direction: ltr;
-			font-size: 13px;
-			font-weight: 400;
-			letter-spacing: 0;
-			line-height: 120%;
-			text-align: left
-		}
-
-		.bee-row-1 .bee-col-1 .bee-block-15 p:not(:last-child) {
-			margin-bottom: 5px
-		}
-
-		.bee-row-1 .bee-col-1 .bee-block-16 p:not(:last-child) {
-			margin-bottom: 14px
-		}
-
-		.bee-row-2 .bee-col-1 .bee-block-1 {
-			padding: 26px 10px;
-			color: #fff;
-			direction: ltr;
-			font-size: 11px;
-			font-weight: 400;
-			letter-spacing: 0;
-			line-height: 120%;
-			text-align: left
-		}
-	</style>
 </head>
-<body>
-<div class="bee-page-container">
-<div class="bee-row bee-row-1">
-<div class="bee-row-content">
-<div class="bee-col bee-col-1 bee-col-w12">
-<div class="bee-block bee-block-1 bee-image"><img alt="" class="bee-right bee-autowidth" src="images/Vector_Smart_Object.png" style="max-width:141px;"/></div>
-<div class="bee-block bee-block-2 bee-heading">
-<h1 style="color:#1f4d97;direction:ltr;font-family:Arial, Helvetica, sans-serif;font-size:14px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Valued client,</span> </h1>
+<body style="background-color: #ffffff; color: #000000; font-family: Arial, Helvetica, sans-serif;">
+<div class="bee-page-container" style="background-image: url('https://63405abd22.imgdist.com/pub/bfra/i3t6xwxz/p7t/qga/k19/shutterstock_2280709537.png'); background-position: top left; background-size: cover;">
+<div class="bee-row bee-row-1" style="position: relative;">
+<div class="bee-row-content" style="max-width: 615px; margin: 0 auto; display: flex;">
+<div class="bee-col bee-col-1 bee-col-w12" style="padding-bottom: 5px; padding-top: 5px; flex-basis: 100%; background-repeat: no-repeat; color: #000000;">
+<div class="bee-block bee-block-1 bee-image" style="overflow: auto;"><img alt="" class="bee-right bee-autowidth" src="images/Vector_Smart_Object.png" style="max-width:141px; float: right; display: block; width: 100%;"/></div>
+<div class="bee-block bee-block-2 bee-heading" style="padding: 10px; text-align: center; width: 100%;">
+<h1 style="color:#1f4d97; direction:ltr; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:700; letter-spacing:normal; line-height:120%; text-align:left; margin-top:0; margin-bottom:0;"><span class="tinyMce-placeholder">Valued client,</span></h1>
 </div>
 <div class="bee-block bee-block-3 bee-spacer">
 <div class="spacer" style="height:16px;"></div>
 </div>
-<div class="bee-block bee-block-4 bee-paragraph">
+<div class="bee-block bee-block-4 bee-paragraph" style="padding: 10px; color: #101112; direction: ltr; font-size: 13px; font-weight: 400; letter-spacing: 0; line-height: 120%; text-align: left;">
 <p>Please note that your new “Mahfaza” portal account has been created. Below, you will find the credentials which will allow you to log into your own personal section:</p>
 <p><strong>Mahfaza Login: </strong>{$$emailAddress}<br/><strong>Password:</strong> {$$password}</p>
 <p>We kindly ask you to change the above generated password for security reasons.</p>
 <p><span style="color: #1f4d96;">“Mahfaza” provides you with a fast and intuitive interface that allows you to perform a wide range of functions including not but limited to:</span></p>
 </div>
-<div class="bee-block bee-block-5 bee-paragraph">
+<div class="bee-block bee-block-5 bee-paragraph" style="padding: 10px; color: #101112; direction: ltr; font-size: 16px; font-weight: 400; letter-spacing: 0; line-height: 120%; text-align: left;">
 <p>• Instant deposits and withdrawals<br/>• Instant transfers between sub-accounts<br/>• MT5 web trader<br/>• Platforms download<br/>• Highly advanced analytical tools<br/>• Trading statistics<br/>• View Account(s) status<br/>• Update Funding details for quick transactions</p>
 </div>
-<div class="bee-block bee-block-6 bee-paragraph">
+<div class="bee-block bee-block-6 bee-paragraph" style="padding: 10px; color: #101112; direction: ltr; font-size: 13px; font-weight: 400; letter-spacing: 0; line-height: 120%; text-align: left;">
 <p><span style="color: #1f4d96;">Furthermore, and from within the portal, you can find a section dedicated to analysis provided by Trading Central, a giant in the world of technical and fundamental analysis. This section includes:</span></p>
 <p><span style="color: #000000;">• Analyst views (Pattern recognition mixed with tried and tested market concepts and theories)<br/>• Market Buzz (A centralized and aggregated news source with recent trends)<br/>• Economic Calendar (Latest fundamental releases at a glance)<br/>• MT5 Indicators (Trading insight directly on your platform)<br/>• WebTV (Live recordings from the New York Stock Exchange floor)</span></p>
 </div>
 <div class="bee-block bee-block-7 bee-spacer">
 <div class="spacer" style="height:30px;"></div>
 </div>
-<div class="bee-block bee-block-8 bee-image"><img alt="" class="bee-fixedwidth" src="images/Layer_7.png" style="max-width:615px;"/></div>
+<div class="bee-block bee-block-8 bee-image" style="overflow: auto;"><img alt="" class="bee-fixedwidth" src="images/Layer_7.png" style="max-width:615px; display: block; width: 100%;"/></div>
 <div class="bee-block bee-block-9 bee-spacer">
 <div class="spacer" style="height:36px;"></div>
 </div>
-<div class="bee-block bee-block-10 bee-heading">
-<h1 style="color:#000000;direction:ltr;font-family:Arial, Helvetica, sans-serif;font-size:13px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;">Please find the portal in the following link. Or you can download our Mahfaza portal mobile app </h1>
+<div class="bee-block bee-block-10 bee-heading" style="padding: 10px; text-align: center; width: 100%;">
+<h1 style="color:#000000; direction:ltr; font-family:Arial, Helvetica, sans-serif; font-size:13px; font-weight:700; letter-spacing:normal; line-height:120%; text-align:left; margin-top:0; margin-bottom:0;">Please find the portal in the following link. Or you can download our Mahfaza portal mobile app</h1>
 </div>
 <div class="bee-block bee-block-11 bee-icons">
-<div class="bee-icon bee-icon-last">
-<div class="bee-content">
-<div class="bee-icon-image"><img height="32px" src="images/Layer_11.png" width="auto"/></div>
+<div class="bee-icon bee-icon-last" style="display: inline-block; vertical-align: middle;">
+<div class="bee-content" style="display: flex; align-items: center;">
+<div class="bee-icon-image" style="padding: 5px;"><img height="32px" src="images/Layer_11.png" width="auto"/></div>
 </div>
 </div>
 </div>
 <div class="bee-block bee-block-12 bee-spacer">
 <div class="spacer" style="height:36px;"></div>
 </div>
-<div class="bee-block bee-block-13 bee-paragraph">
-<p><strong>Need any help?</strong><br/>Feel free to call us anytime +962 6 560 9000<br/>Chat with us on WhatsApp </p>
+<div class="bee-block bee-block-13 bee-paragraph" style="padding: 10px; color: #101112; direction: ltr; font-size: 12px; font-weight: 400; letter-spacing: 0; line-height: 120%; text-align: left;">
+<p><strong>Need any help?</strong><br/>Feel free to call us anytime +962 6 560 9000<br/>Chat with us on WhatsApp </p>
 </div>
-<div class="bee-block bee-block-14 bee-paragraph">
+<div class="bee-block bee-block-14 bee-paragraph" style="padding: 10px; color: #101112; direction: ltr; font-size: 13px; font-weight: 400; letter-spacing: 0; line-height: 120%; text-align: left;">
 <p>You can also visit our website and education page, where you’ll find lots of useful information to help you start your trading journey.<br/><br/>Finally, opening a live account with Mahfaza is fast and straightforward. If you choose to do so, you can head on over to the accounts page and follow the simple instructions.</p>
 </div>
-<div class="bee-block bee-block-15 bee-paragraph">
+<div class="bee-block bee-block-15 bee-paragraph" style="padding: 10px; color: #1f4d96; direction: ltr; font-size: 13px; font-weight: 400; letter-spacing: 0; line-height: 120%; text-align: left;">
 <p>Best Regards,</p>
 <p>Mahfaza Team</p>
 </div>
-<div class="bee-block bee-block-16 bee-paragraph">
+<div class="bee-block bee-block-16 bee-paragraph" style="padding: 10px; color: #101112; direction: ltr; font-size: 13px; font-weight: 400; letter-spacing: 0; line-height: 120%; text-align: left;">
 <p>  </p>
 </div>
 </div>
 </div>
 </div>
-<div class="bee-row bee-row-2">
-<div class="bee-row-content">
-<div class="bee-col bee-col-1 bee-col-w12">
-<div class="bee-block bee-block-1 bee-paragraph">
+<div class="bee-row bee-row-2" style="position: relative; background-color: #1f4d96;">
+<div class="bee-row-content" style="max-width: 615px; margin: 0 auto; display: flex; background-repeat: no-repeat; color: #000000;">
+<div class="bee-col bee-col-1 bee-col-w12" style="padding-bottom: 5px; padding-top: 5px; flex-basis: 100%;">
+<div class="bee-block bee-block-1 bee-paragraph" style="padding: 26px 10px; direction: ltr; font-weight: 400; letter-spacing: 0; line-height: 120%; text-align: left; color: #fff; font-size: 11px;">
 <p>Risk Warning: Forex and CFDs are leveraged products that incur a high level of risk and a small adverse market movement may expose client to lose the entire Capital Invested. Please ensure that you understand the risks involved and seek independent advice if necessary.<br/><br/>This message was sent by or on behalf of Mahfaza (National Portfolio Securities)<br/><br/>Regulated by the JSC</p>
 </div>
 </div>
